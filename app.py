@@ -3,10 +3,11 @@ import streamlit as st
 from datetime import datetime, timezone
 import pytz
 import requests
+import streamlit as st
 
-# API Keys
-ODDS_API_KEY = '416c30d26f73d0e2e25d670500f292f3'
-SPORTSDATA_API_KEY = '498c3d8e413947fb99e9cea360011eb2'
+#API Keys
+ODDS_API_KEY = st.secrets["ODDS_API_KEY"]
+SPORTSDATA_API_KEY = st.secrets["SPORTSDATA_API_KEY"]
 
 SPORT = 'baseball_mlb'
 REGION = 'us'
